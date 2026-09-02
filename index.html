@@ -1593,37 +1593,41 @@
       .specs__cards {
         width: 100%;
         height: auto;
-        overflow: visible
+        overflow: visible;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        flex-direction: unset
       }
 
       .stat {
         position: relative;
         min-height: 0;
-        padding: 20px;
-        gap: 12px
+        padding: 16px;
+        gap: 10px
       }
 
       .stat__value {
-        font-size: 42px
+        font-size: 36px
       }
 
       .stat__label {
-        font-size: 16px
+        font-size: 14px
+      }
+
+      .stat__desc {
+        font-size: 12px
       }
 
       .stat__icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 15px
+        width: 42px;
+        height: 42px;
+        border-radius: 12px
       }
 
       .stat__icon svg {
-        width: 25px;
-        height: 25px
-      }
-
-      .specs__cards {
-        gap: 12px
+        width: 20px;
+        height: 20px
       }
 
       .story__inner {
